@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroun"
+    android:orientation="vertical"
+
+    tools:context="com.example.awageeh.sqllite.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="your name"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:id="@+id/name"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="phone number"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:id="@+id/phone"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/insert"
+            android:layout_weight="1"
+            android:text="insert"
+            android:textSize="20dp"
+            android:onClick="btn_add_data"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/btn_bg"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/delet"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:onClick="btn_delet_data"
+            android:text="delet"
+            android:textSize="20dp"
+            android:background="@drawable/btn_bg"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/update"
+            android:layout_weight="1"
+            android:onClick="btn_update_data"
+            android:layout_marginLeft="30dp"
+            android:text="update"
+            android:textSize="20dp"
+            android:background="@drawable/btn_bg"/>
+
+
+
+    </LinearLayout>
+
+    <LisktView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:id="@+id/listview"
+        android:background="@drawable/backgroun"
+
+
+        />
+
+</LinearLayout>
